@@ -1,0 +1,14 @@
+GET         /                         controllers.Main.index
+GET         /chat                     controllers.Main.chat
+GET         /game                     controllers.Main.game
+
+GET         /chat/chatroom.js         controllers.Chat.chatRoomJs
+GET         /room/chat                controllers.Chat.chat
+
+GET         /game/gameroom.js         controllers.Game.gameRoomJs
+GET         /room/game                controllers.Game.game
+GET         /game/start               controllers.Game.start
+GET         /game/fill                controllers.Game.fill
+GET         /game/restart             controllers.Game.restart(id: Int)
+
+GET         /*file                    controllers.Assets.at(path="/public", file)

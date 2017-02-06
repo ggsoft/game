@@ -1,0 +1,20 @@
+<div class="container">
+    <div>
+        Chat demo (akka and websockets based)
+    </div>
+    <div>
+        Users online: <span id="members"></span>
+    </div>
+    <br/>
+    <div style="padding: 5px;" id="onChat">
+        <div id="scroll" style="height: 400px; overflow:auto; border: 1px solid #bbb1aa;">
+            <div style="margin: 5px;" id="chatmessages"></div>
+        </div>
+        <br/>
+        <textarea style="width: 99%; height: 80px;" id="talk" title="Write your message (Ctrl+Enter - send)"></textarea>
+    </div>
+    <div style="text-align: right;">
+        <input id="chatsend" style="cursor: pointer" type="button" value="Send message" />
+    </div>
+    <script type="text/javascript" charset="utf-8" src="@routes.Chat.chatRoomJs()"></script>
+</div>

@@ -1,0 +1,13 @@
+@(content: Html)
+
+<!DOCTYPE html>
+
+<html lang="en">
+    @views.html.head()
+    <body>
+        <div class="container">
+           @views.html.bar()
+           @content
+        </div>
+    </body>
+</html>

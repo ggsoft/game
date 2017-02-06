@@ -1,0 +1,16 @@
+<div class="container">
+    Game demo (akka and websockets based)
+</div>
+<br/>
+<div style="padding: 5px;" id="onGame">
+    <div id="scroll" style="height: 400px; overflow:auto; border: 1px solid #bbb1aa;">
+        <div style="margin: 5px;" id="gamemessages"></div>
+    </div>
+</div>
+<div class="btn-group">
+    <button id="gamestart" type="button" class="btn btn-default">Start new game</button>
+    <button id="fillstates" type="button" class="btn btn-default">Fill states</button>
+    <button id="gamerestart" type="button" class="btn btn-default">Replay game from begin to point</button>
+    <select id="plist" style="padding: 4px 0;"></select>
+</div>
+<script type="text/javascript" charset="utf-8" src="@routes.Game.gameRoomJs()"></script>
